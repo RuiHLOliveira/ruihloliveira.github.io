@@ -1,0 +1,52 @@
+*, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "IBM Plex Serif", Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "IBM Plex Serif", Arial, Helvetica, sans-serif;
+}
+
+.row{
+    padding-top:     10px;
+    padding-bottom:  10px;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.background-keyboard{
+    background-image: url("keyboard.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.background-keyboard{
+    color: white;
+}
+
+.profilepic-sm{
+    border-radius: 50%;
+    height: 50px;
+    margin: 10px
+}
+.author-date{
+    font-size: 16px;
+    line-height: 20px;
+}
+p{
+    font-size: 18px;
+    line-height: calc(18px*1.5);
+    padding-top:    25px; 
+    padding-bottom: 25px;
+}
