@@ -19,7 +19,7 @@ ul {
     list-style: none;
 }
 
-body {
+body, button {
     font-family: 'Arial', serif;
     font-family: 'Noto Serif', serif;
     font-family: 'Nunito', serif;
@@ -157,31 +157,6 @@ body {
     }
 }
 
-/* ALERTA */
-/* .alerta {
-    position: absolute;
-    top: 20px;
-    left: 0px;
-    z-index: 10;
-    width: 100%;
-    text-align: center;
-    display: none;
-}
-
-.alerta.ativo {
-    display: block;
-    animation: fadeInDown .3s;
-}
-
-
-.alerta_mensagem {
-    background: #ffffff;
-    display: inline-block;
-    padding: 20px 40px;
-    border: 2px solid black;
-    box-shadow: 0px 3px 4px rgba(0,0,0,.5), 0px 4px 10px rgba(0,0,0,.5);
-} */
-
 .padding20px{
     padding: 20px;
 }
@@ -239,69 +214,6 @@ body {
     width: 800px;
     max-width: 100vw;
 }
-
-
-/* .carrinho_item {
-    display: grid;
-    grid-template-columns: 1fr 1fr 50px;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    padding: 10px 0;
-} */
-
-/* .carrinho_titulo {
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #000000;
-} */
-
-/* .carrinho_remover {
-    margin-left: 10px;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-    background-color: #00000000;
-} */
-/* .carrinho_remover:hover{
-    transition-duration: .3s;
-    background-color: #00000011;
-} */
-
-/* .carrinho_preco {
-    text-align: right;
-} */
-
-/* .carrinho_total {
-    text-align: right;
-    padding: 10px 50px 10px 0;
-    margin-bottom: 20px;
-    border-bottom: 2px solid black;
-} */
-
-/* .carrinho_finalizar
-{
-    display: block;
-    margin-left: auto;
-    background: #000;
-    cursor: pointer;
-    color: #ffffff;
-    font-size: 1rem;
-    padding: 10px 25px;
-    border: none;
-    font-family: "Noto Serif";
-} */
-
-/* .carrinho_fechar {
-    border-radius: 50%;
-    border: 2px solid black;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0px 3px 4px rgba(0,0,0,.5), 0px 4px 10px rgba(0,0,0,.5);
-} */
 
 .bold {
     font-weight: bold;

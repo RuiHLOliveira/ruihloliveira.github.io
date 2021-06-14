@@ -22,6 +22,9 @@ export default {
         //     console.log('result',result);
         //     this.post = result;
         // }
+        closePost () {
+            this.$emit('closePost');
+        }
     },
     created () {
         console.log('inner post', this.post);
@@ -29,19 +32,22 @@ export default {
         // this.loadPosts();
     },
     template: `
-    <div>
-        <link rel="stylesheet" href="./ScreenComponents/Home/home.css">
-        
-        <div v-if="post.title" class="mainContainer">
-            <div class="flex f-column f-alignitems-center mt-2 mb-2 ml-2 mr-2">
+    <div class="">
+        <div v-if="post.title">
+            <div class="flex f-column f-alignitems-center">
                 <div class="post-title"><span v-html="post.title"></span></div>
                 <div class="post-subtitle"><span v-html="post.subtitle"></span></div>
                 <div class="post-authordate"><span v-html="post.author"></span> @ <span v-html="post.date" ></span></div>
-                <div class="post-body">
-                    <p v-for="paragraph in post.body" v-html="paragraph"></p>
-                </div>
             </div>
-            <notice-box></notice-box>
+            
+            <div class="mt-15 mb-15 flex f-row f-justify-end"><button class="btn btn-black" type="button" @click="closePost()">Close Post</button></div>
+            
+            <div class="post-body">
+                <p v-for="paragraph in post.body" v-html="paragraph"></p>
+            </div>
+            
+            <div class="mt-15 mb-15 flex f-row f-justify-end"><button class="btn btn-black" type="button" @click="closePost()">Close Post</button></div>
+            
         </div>
     </div>
     `

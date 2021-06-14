@@ -27,6 +27,10 @@
     justify-content: center;
 }
 
+.f-justify-end {
+    justify-content: flex-end;
+}
+
 .f-sons-flex-1 > * {
     flex: 1;
 }

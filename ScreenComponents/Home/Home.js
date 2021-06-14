@@ -49,7 +49,7 @@ export default {
             this.post = post.post;
             this.postFile = post.file;
         },
-        closePost() {
+        closePost(event) {
             this.post = {};
             this.postFile = '';
         }
@@ -69,10 +69,18 @@ export default {
                 <div>links</div>
             </div>
             
-            <Post v-bind:post="post" v-bind:file="postFile"></Post>
+            <div class="flex f-row f-justify-center mt-30 f-sons-flex-1">
+                <Post 
+                    class="blog-postList-max-width"
+                    v-bind:post="post"
+                    v-bind:file="postFile"
+                    v-on:closePost="closePost($event)"
+                ></Post>
+            </div>
             
             <div class="flex f-row f-justify-center mt-30 f-sons-flex-1">
                 <div class="blog-postList-max-width">
+                    <h2 class="post-title">Posts</h2><hr>
                     <div v-for="post in postList"
                         @click="openPost(post.file)"
                         class="flex f-column post-title post-title-link cursor-pointer pl-10 pr-10 mt-15 pt-10 pb-10"
