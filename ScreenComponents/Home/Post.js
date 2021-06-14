@@ -16,7 +16,8 @@ export default {
     },
     methods: {
         async loadPosts(){
-            let result = await fetch(`./../../posts/${this.parameters.filename}`)
+
+            let result = await fetch(`./../../posts/${this.parameters.p}`)
             .then((response) => {
                 return response.json();
             });

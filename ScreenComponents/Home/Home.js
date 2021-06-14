@@ -41,10 +41,12 @@ export default {
             console.log(this.postList);
         },
         openPost(postFile){
-            EventBus.$emit('route', [
-                'Post',
-                {'filename': postFile }
-            ]);
+            window.location = `#post?p=${postFile}`;
+            window.location.reload();
+            // EventBus.$emit('route', [
+            //     'Post',
+            //     {'p': postFile }
+            // ]);
         }
     },
     created () {

@@ -16,24 +16,6 @@ const HomeScreenComponent = {
 
 export default {
     'screenComponents': [
-        // {
-        //     route: '',
-        //     hash: '#Login',
-        //     name: 'Login',
-        //     component: Login
-        // },
-        // {
-        //     route: '/',
-        //     hash: '#Login',
-        //     name: 'Login',
-        //     component: Login
-        // },
-        // {
-        //     route: `/${page}notebooksIndex`,
-        //     hash: '#notebooksIndex',
-        //     name: 'notebooksIndex',
-        //     component: NotebooksIndex
-        // },
         {
             route: `/${page}post`,
             hash: '#post',

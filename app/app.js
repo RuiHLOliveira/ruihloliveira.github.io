@@ -16,7 +16,8 @@ const vm = new Vue({
     el: "#app",
     data: {
         currentScreenComponent: routing.NotFoundScreenComponent,
-        currentScreenComponentParameters: []
+        currentScreenComponentParameters: [],
+        queryStringParams: []
     },
     computed: {
         ViewComponent () {
@@ -78,15 +79,30 @@ const vm = new Vue({
             this.currentScreenComponentParameters = parameters;
             this.currentScreenComponent = fullScreenComponent.component;
             // history.pushState({}, fullScreenComponent.name, fullScreenComponent.route);
-            location.hash = fullScreenComponent.name;
+            // location.hash = fullScreenComponent.name;
         },
-        defineStartScreen () {
+        defineStartScreenNew () {
+            if(window.location.pathname.includes('/#post')){
+                //é um post
+                this.routeTo(['Post', this.queryStringParams]);
+            } else {
+                this.defineStartScreenOld();
+            }
+        },
+        defineStartScreenOld () {
             if(window.localStorage.sRegisterToken !== ''){
                 let screenComponent = this.findFullScreenComponentByHash(location.hash);
                 this.routeTo(screenComponent.name === 'NotFound' ? routing.HomeScreenComponent.name : screenComponent.name);
             } else {
                 this.routeTo('Login');
             }
+        },
+        getQueryStringParams(){
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const params = Object.fromEntries(urlSearchParams.entries());
+            this.queryStringParams = params;
+            console.log('query String Params', this.queryStringParams);
+            console.log('window location', window.location);
         },
     },
     created () {
@@ -96,7 +112,8 @@ const vm = new Vue({
         EventBus.$on('action',(data) => {
             this.runAction(data);
         });
-        this.defineStartScreen();
+        this.getQueryStringParams();
+        this.defineStartScreenNew();
     },
     render: function (createElement) {
         return createElement(
