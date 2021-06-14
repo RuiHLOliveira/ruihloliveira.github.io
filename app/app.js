@@ -81,15 +81,7 @@ const vm = new Vue({
             // history.pushState({}, fullScreenComponent.name, fullScreenComponent.route);
             // location.hash = fullScreenComponent.name;
         },
-        defineStartScreenNew () {
-            if(window.location.pathname.includes('/#post')){
-                //é um post
-                this.routeTo(['Post', this.queryStringParams]);
-            } else {
-                this.defineStartScreenOld();
-            }
-        },
-        defineStartScreenOld () {
+        defineStartScreen () {
             if(window.localStorage.sRegisterToken !== ''){
                 let screenComponent = this.findFullScreenComponentByHash(location.hash);
                 this.routeTo(screenComponent.name === 'NotFound' ? routing.HomeScreenComponent.name : screenComponent.name);
@@ -101,8 +93,6 @@ const vm = new Vue({
             const urlSearchParams = new URLSearchParams(window.location.search);
             const params = Object.fromEntries(urlSearchParams.entries());
             this.queryStringParams = params;
-            console.log('query String Params', this.queryStringParams);
-            console.log('window location', window.location);
         },
     },
     created () {
@@ -113,7 +103,7 @@ const vm = new Vue({
             this.runAction(data);
         });
         this.getQueryStringParams();
-        this.defineStartScreenNew();
+        this.defineStartScreen();
     },
     render: function (createElement) {
         return createElement(

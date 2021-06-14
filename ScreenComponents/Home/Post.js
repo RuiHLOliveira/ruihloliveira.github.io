@@ -1,12 +1,11 @@
 export default {
     data: function () {
         return {
-            post: {},
             filename: '',
         }
     },
     props: [
-        'parameters'
+        'post'
     ],
     watch: {
     },
@@ -15,25 +14,25 @@ export default {
     components: {
     },
     methods: {
-        async loadPosts(){
-
-            let result = await fetch(`./../../posts/${this.parameters.p}`)
-            .then((response) => {
-                return response.json();
-            });
-            console.log('result',result);
-            this.post = result;
-        }
+        // async loadPosts(){
+        //     let result = await fetch(`./../../posts/${this.parameters.p}`)
+        //     .then((response) => {
+        //         return response.json();
+        //     });
+        //     console.log('result',result);
+        //     this.post = result;
+        // }
     },
     created () {
+        console.log('inner post', this.post);
         // this.loadNotebooks();
-        this.loadPosts();
+        // this.loadPosts();
     },
     template: `
     <div>
         <link rel="stylesheet" href="./ScreenComponents/Home/home.css">
         
-        <div class="mainContainer">
+        <div v-if="post.title" class="mainContainer">
             <div class="flex f-column f-alignitems-center mt-2 mb-2 ml-2 mr-2">
                 <div class="post-title"><span v-html="post.title"></span></div>
                 <div class="post-subtitle"><span v-html="post.subtitle"></span></div>

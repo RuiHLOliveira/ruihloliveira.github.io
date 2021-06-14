@@ -3,7 +3,6 @@
 // import NotebooksIndex from "./../ScreenComponents/Notebooks/Home.js";
 // import NotesIndex from "./../ScreenComponents/Inbox/Home.js";
 import Home from "../ScreenComponents/Home/Home.js";
-import Post from "../ScreenComponents/Home/Post.js";
 
 const page = '?page=';
 const NotFound = { template: '<p>404 Page not found</p>' };
@@ -16,12 +15,12 @@ const HomeScreenComponent = {
 
 export default {
     'screenComponents': [
-        {
-            route: `/${page}post`,
-            hash: '#post',
-            name: 'Post',
-            component: Post
-        },
+        // {
+        //     route: `/${page}post`,
+        //     hash: '#post',
+        //     name: 'Post',
+        //     component: Post
+        // },
         HomeScreenComponent
     ],
     'NotFoundScreenComponent': {

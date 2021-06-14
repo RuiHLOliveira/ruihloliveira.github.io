@@ -1,4 +1,5 @@
 import EventBus from "../../app/EventBus.js";
+import Post from "./Post.js";
 
 export default {
     data: function () {
@@ -11,6 +12,7 @@ export default {
             showCompletedNotebooks: false,
             activeNotebook: {},
             post: {},
+            postFile: '',
             postList: [],
         }
     },
@@ -19,7 +21,7 @@ export default {
     computed: {
     },
     components: {
-        // 'CreateForm': CreateForm,
+        'Post': Post,
         // 'EditForm': EditForm,
         // 'NotesListing':NotesListing,
     },
@@ -40,13 +42,16 @@ export default {
             this.postList = result;
             console.log(this.postList);
         },
-        openPost(postFile){
-            window.location = `#post?p=${postFile}`;
-            window.location.reload();
-            // EventBus.$emit('route', [
-            //     'Post',
-            //     {'p': postFile }
-            // ]);
+        openPost(postFile){ //file e post
+            const post = this.postList.find(function (element) {
+                return postFile === element.file;
+            })
+            this.post = post.post;
+            this.postFile = post.file;
+        },
+        closePost() {
+            this.post = {};
+            this.postFile = '';
         }
     },
     created () {
@@ -63,6 +68,8 @@ export default {
                 <div class="blog-subtitle mb-10"><h6>Blog e estudos</h6></div>
                 <div>links</div>
             </div>
+            
+            <Post v-bind:post="post" v-bind:file="postFile"></Post>
             
             <div class="flex f-row f-justify-center mt-30 f-sons-flex-1">
                 <div class="blog-postList-max-width">
