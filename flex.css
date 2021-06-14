@@ -1,0 +1,32 @@
+
+.flex {
+    display: flex;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.f-row {
+    flex-direction: row;
+}
+
+.f-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.f-alignitems-center {
+    align-items: center;
+}
+
+.f-alignitems-stretch {
+    align-items: stretch;
+}
+
+.f-justify-center {
+    justify-content: center;
+}
+
+.f-sons-flex-1 > * {
+    flex: 1;
+}

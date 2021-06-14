@@ -1,0 +1,32 @@
+/* BLOG */
+.blog-title * {
+    font-size: 2rem;
+}
+.blog-subtitle * {
+    font-weight: bold;
+}
+.blog-postList-max-width {
+    max-width: 800px;
+}
+
+/* POST */
+.post-title {
+    /*font-weight: bold;*/
+    font-size: 1.2rem;
+}
+.post-title-link:hover {
+    background: #eeeeee;
+}
+.post-author-datetime {
+    font-size: 0.9rem;
+    font-style: italic;
+
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+
+
+

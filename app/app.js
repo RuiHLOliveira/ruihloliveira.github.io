@@ -15,11 +15,15 @@ Vue.directive('focus', {
 const vm = new Vue({
     el: "#app",
     data: {
-        currentScreenComponent: routing.NotFoundScreenComponent
+        currentScreenComponent: routing.NotFoundScreenComponent,
+        currentScreenComponentParameters: []
     },
     computed: {
         ViewComponent () {
             return this.currentScreenComponent;
+        },
+        ViewComponentParameters () {
+            return this.currentScreenComponentParameters;
         }
     },
     methods: {
@@ -52,8 +56,17 @@ const vm = new Vue({
             }
             return true;
         },
-        routeTo (screenComponentName){
-            console.log(screenComponentName)
+        extractParametersFromScreenComponentData (data) {
+            if(Array.isArray(data)) {
+                return {'screenComponentName':data[0], 'parameters': data[1] };
+            } else {
+                return {'screenComponentName':data, 'parameters': [] };
+            }
+        },
+        routeTo (data){
+            const {screenComponentName, parameters} = this.extractParametersFromScreenComponentData(data);
+            console.log('screenComponentName', screenComponentName)
+            console.log('parameters', parameters)
             let fullScreenComponent = this.findFullScreenComponent(screenComponentName);
             if( (fullScreenComponent.needAuthentication === true) && (this.isAuthenticated() === false)) {
                 fullScreenComponent = this.findFullScreenComponent('Login');
@@ -62,6 +75,7 @@ const vm = new Vue({
                 notify.notify('Page Not Found','error');
                 return;
             }
+            this.currentScreenComponentParameters = parameters;
             this.currentScreenComponent = fullScreenComponent.component;
             // history.pushState({}, fullScreenComponent.name, fullScreenComponent.route);
             location.hash = fullScreenComponent.name;
@@ -85,6 +99,13 @@ const vm = new Vue({
         this.defineStartScreen();
     },
     render: function (createElement) {
-        return createElement(this.ViewComponent);
+        return createElement(
+            this.ViewComponent,
+            {
+                props: {
+                    parameters: this.ViewComponentParameters
+                },
+            }
+        );
     }
 });

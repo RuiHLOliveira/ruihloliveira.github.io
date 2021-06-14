@@ -313,25 +313,6 @@ body {
     padding: 2px 4px;
 }
 
-.flex {
-    display: flex;
-}
-
-.f-column {
-    flex-direction: column;
-}
-
-.f-row {
-    flex-direction: row;
-}
-
-.f-wrap-wrap {
-    flex-wrap: wrap;
-}
-
-.f-alignitems-center {
-    align-items: center;
-}
 
 
 .mh95vh{
@@ -339,11 +320,11 @@ body {
     height: 95vh;
 }
 
-.mainContainer {
+.mainContainer2 {
     /* width: 100%; */
     margin: 0 auto;
     /* margin-left: 150px; */
-    background-color: #eeeeee;
+    background-color: #ffffff;
     /* background-color: #eeeeee; */
     /* padding: 20px; */
 }

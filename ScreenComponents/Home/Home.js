@@ -1,3 +1,5 @@
+import EventBus from "../../app/EventBus.js";
+
 export default {
     data: function () {
         return {
@@ -9,6 +11,7 @@ export default {
             showCompletedNotebooks: false,
             activeNotebook: {},
             post: {},
+            postList: [],
         }
     },
     watch: {
@@ -21,19 +24,27 @@ export default {
         // 'NotesListing':NotesListing,
     },
     methods: {
-        // fillReadableDuedate(notebook){
-        //         if(notebook.duedate !== null) {
-        //             notebook.readableDuedate = moment(new Date(notebook.duedate)).format('ddd, MMM Mo YYYY');
-        //         }
-        //         return notebook;
-        // },
         async loadPosts(){
-            let result = await fetch("./../../posts/post2.json")
+            let result = await fetch("./../../posts/postList.json")
             .then((response) => {
                 return response.json();
             });
-            console.log('result',result);
-            this.post = result;
+
+            for (let i = 0; i < result.length; i++){
+                let post = await fetch(`./../../posts/${result[i].file}`)
+                .then((response) => {
+                    return response.json();
+                });
+                result[i]['post'] = post;
+            }
+            this.postList = result;
+            console.log(this.postList);
+        },
+        openPost(postFile){
+            EventBus.$emit('route', [
+                'Post',
+                {'filename': postFile }
+            ]);
         }
     },
     created () {
@@ -44,13 +55,22 @@ export default {
     <div>
         <link rel="stylesheet" href="./ScreenComponents/Home/home.css">
         
-        <div class="mainContainer">
-            <div class="flex f-column f-alignitems-center mt-2 mb-2 ml-2 mr-2">
-                <div class="post-title"><span v-html="post.title"></span></div>
-                <div class="post-subtitle"><span v-html="post.subtitle"></span></div>
-                <div class="post-authordate"><span v-html="post.author"></span> @ <span v-html="post.date" ></span></div>
-                <div class="post-body">
-                    <p v-for="paragraph in post.body" v-html="paragraph"></p>
+        <div class="">
+            <div class="flex f-column f-alignitems-center mt-10 mb-30">
+                <div class="blog-title mb-10"><h1>&lt;rui-leite /&gt;</h1></div>
+                <div class="blog-subtitle mb-10"><h6>Blog e estudos</h6></div>
+                <div>links</div>
+            </div>
+            
+            <div class="flex f-row f-justify-center mt-30 f-sons-flex-1">
+                <div class="blog-postList-max-width">
+                    <div v-for="post in postList"
+                        @click="openPost(post.file)"
+                        class="flex f-column post-title post-title-link cursor-pointer pl-10 pr-10 mt-15 pt-10 pb-10"
+                    >
+                        <span>{{post.post.title}}</span>
+                        <span class="mt-10 post-author-datetime">{{post.post.date}}</span>
+                    </div>
                 </div>
             </div>
             <notice-box></notice-box>
