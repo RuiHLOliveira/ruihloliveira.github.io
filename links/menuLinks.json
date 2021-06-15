@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Sobre",
+        "type": 1,
+        "url": "about.json"
+    },
+    {
+        "name": "Twitter",
+        "type": 2,
+        "url": "https://twitter.com/ruihleite"
+    },
+    {
+        "name": "Twitch",
+        "type": 2,
+        "url": "https://www.twitch.tv/ruileite"
+    }
+]

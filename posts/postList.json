@@ -1,8 +1,5 @@
 [
-    {
-        "file" : "generic-post.json"
-    },
-    {
-        "file" : "post2.json"
-    }
+    {"file" : "generic-post.json"},
+    {"file" : "post2.json"},
+    {"file" : "about.json"}
 ]

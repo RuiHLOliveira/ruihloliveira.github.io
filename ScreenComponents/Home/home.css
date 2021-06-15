@@ -1,32 +1,93 @@
+.mainContainer{
+    min-height: 100vh;
+}
+
+.mainContainerDecoration {
+    margin: 0 9px;
+    padding: 9px;
+    /*background-color: #efefef;*/
+    /*border-left: 2px solid black;*/
+    /*border-right: 2px solid black;*/
+}
+
 /* BLOG */
 .blog-title * {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
 }
 .blog-subtitle * {
+    font-size: 1.5rem;
     font-weight: bold;
+}
+.blog-link-list{
+    border-radius: 5px;
+    background-color: #444444;
+    color: #eeeeee;
+}
+.blog-link{
+    font-style: italic;
 }
 .blog-postList-max-width {
     max-width: 800px;
 }
-
-/* POST */
-.post-title {
-    /*font-weight: bold;*/
-    font-size: 1.2rem;
+.blog-footer {
+    font-size: 1rem;
 }
-.post-title-link:hover {
+
+/* POST LIST */
+.postList-title {
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-style: italic;
+}
+.postList-title-link:hover {
     background: #eeeeee;
 }
-.post-author-datetime {
+.postList-author-datetime {
     font-size: 0.9rem;
-    font-style: italic;
-
 }
 .cursor-pointer {
     cursor: pointer;
 }
 
+/* POST */
+.post-title {
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-style: italic;
+}
+.post-subtitle {
+    font-size: 1.7rem;
+}
+.post-date {
+    font-size: 1rem;
+}
 
+
+/* VUE ANIMATION TRANSITIONS */
+.fadeInDown-enter {
+    opacity: 0;
+}
+.fadeInDown-enter-active{
+    transition: opacity 0.5s;
+}
+.fadeInDown-enter-to {
+    opacity: 1;
+}
+
+.fadeInDown-leave {
+    opacity: 1;
+}
+.fadeInDown-leave-active{
+    transition: opacity 0.2s;
+}
+.fadeInDown-leave-to {
+    opacity: 0;
+}
+
+
+
+/* BUTTONS */
 .btn {
     background: #fff;
     font-size: 1rem;
@@ -48,6 +109,10 @@
     background-color: #444444;
     color: #eeeeee;
     border-color: #444444;
+}
+
+.text-center{
+    text-align: center;
 }
 
 

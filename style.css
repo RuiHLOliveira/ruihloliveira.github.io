@@ -11,6 +11,10 @@ body, h1, h2, ul ,li, p {
     margin: 0px;
 }
 
+a {
+    color: inherit;
+}
+
 p {
     margin-bottom: 20px;
 }
@@ -21,10 +25,13 @@ ul {
 
 body, button {
     font-family: 'Arial', serif;
-    font-family: 'Noto Serif', serif;
-    font-family: 'Nunito', serif;
+    /*font-family: 'Noto Serif', serif;*/
+    /*font-family: 'Nunito', serif;*/
     font-family: 'Poppins', serif;
-    font-size: 1rem;
+    font-family: 'Arvo',serif;
+
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .row{

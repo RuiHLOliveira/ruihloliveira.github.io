@@ -23,6 +23,10 @@
     align-items: stretch;
 }
 
+.f-justify-spaceAround {
+    justify-content: space-around;
+}
+
 .f-justify-center {
     justify-content: center;
 }
