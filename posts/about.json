@@ -1,9 +1,11 @@
 {
     "title": "Quem sou eu",
-    "subtitle": "<hr>",
+    "subtitle": "---",
     "author": "Rui H L Oliveira",
     "date": "12 de Junho 2021",
     "body": [
-        "Dev Backend Pleno na Nasajon, estudo principalmente PHP, mas também outras tecnologias conforme o interesse."
+        "Dev Backend Pleno na Nasajon, estudo principalmente PHP, mas também outras tecnologias conforme o interesse.",
+        "Com 14 anos conheci a programação, quando entrei no ensino médio técnico. Tive péssimas experiências com pascal e delphi, e pensei em largar a área. Porém o desenvolvimento de software me escolheu mais uma vez, quando consegui uma vaga na faculdade.",
+        "Graduado em Tecnologia de Análise e Desenvolvimento de Sistemas Informatizados pela FAETERJ Rio de Janeiro, lá desenvolvi meus pilares: estudo contínuo, persistência perante uma barreira, e o foco na entrega de valor."
     ]
 }
