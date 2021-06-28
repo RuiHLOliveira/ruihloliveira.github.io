@@ -57,10 +57,23 @@
     font-style: italic;
 }
 .post-subtitle {
-    font-size: 1.7rem;
+    font-size: 1.1rem;
 }
 .post-date {
     font-size: 1rem;
+}
+
+.post-body {
+    color: #444444;
+}
+
+.post-body .code-container {
+    display:block;
+    white-space: pre;
+    background: #eeeeee;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
 }
 
 
