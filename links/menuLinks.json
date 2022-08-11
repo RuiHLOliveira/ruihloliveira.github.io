@@ -13,5 +13,10 @@
         "name": "Twitch",
         "type": 2,
         "url": "https://www.twitch.tv/ruileite"
+    },
+    {
+        "name": "PhpDailyManager",
+        "type": 2,
+        "url": "/phpdailymanager"
     }
 ]
