@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+@import url('./colors.css');
+@import url('./button.css');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #eeeeee;
+    font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.card {
+    width: 700px;
+    margin: 10px auto;
+    /* border: 1px solid #cccccc; */
+    border: 1px solid #4d4d4d;
+    padding: 10px;
+    background-color: #ffffff;
+}
+.spanBox{
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-spacebetween {
+    justify-content: space-between;
+}
+
+.justify-spacearound {
+    justify-content: space-around;
+}
+
+.alignitens-start {
+    align-items: flex-start;
+}
+
+.alignitens-center {
+    align-items: center;
+}
+
+.flex-justify-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-lateral-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}

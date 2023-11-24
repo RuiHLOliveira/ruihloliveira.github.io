@@ -1,0 +1,29 @@
+
+
+/* default color ?? */
+:root {
+    /* --default-button-color: #2677a6;
+    --situacao1-button-color: #26a67b;
+    --default-button-color-background: #20648b;
+    --situacao1-button-color-background: #1c7c73; */
+
+    /* DEFAULT */
+    --default-bg: #2677a6;
+    --default-bg-hover: #206186;
+
+    /* SECONDARY */
+    --secondary-bg: #ffffff;
+    --secondary-bg-hover: #eefff9;
+
+    /* SITUACAO 1 GOOD */
+    --situacao1-bg: #2c6653;
+    --situacao1-bg-hover: #23504a;
+
+    /* SITUACAO 2 BAD */
+    --situacao2-bg: #b93838;
+    --situacao2-bg-hover: #b93838;
+    
+    /* RED TEXT */
+    --red-bg: #b93838;
+}
+

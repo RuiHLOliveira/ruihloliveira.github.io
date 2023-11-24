@@ -1,0 +1,31 @@
+
+nav {
+    border-bottom: 1px solid #b8b8b8;
+}
+
+
+a.menulink,
+button.menulink {
+    /* background-color: var(--default-bg); */
+    color: #3d3d3d;
+    display: inline-block;
+    padding: 5px 10px;  
+    margin: 5px 5px;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+
+    /* link */
+    text-decoration: none;
+
+    /* button */
+    font-size: inherit;
+    font-family: inherit;
+    cursor:pointer;
+}
+
+a.router-link-active,
+a.menulink:hover,
+button.menulink:hover {
+    /* background-color: var(--default-bg-hover); */
+    border-bottom: 4px solid var(--default-bg);
+}

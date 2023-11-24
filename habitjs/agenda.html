@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./js/agendaEvents.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div id="menu"></div>
+
+    <div class="card flex justify-spacebetween">
+        <div>
+            <span>Subir Backup</span>
+            <input type="file" name="arquivojson" id="arquivojson"><br>
+            <button type="button" onclick="importBackupJson()">Ok</button>
+        </div>
+        <div>
+            <span>Baixar Backup</span>
+            <button type="button" onclick="baixarBackupJson()">Baixar</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Agenda do Dia</h3>
+        <div id="agendaDoDia"></div>
+    </div>
+
+</body>
+</html>

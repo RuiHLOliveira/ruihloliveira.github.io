@@ -1,0 +1,19 @@
+table.table {
+    margin: 10px auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.table th,
+table.table td {
+    text-align: left;
+    border-bottom: 1px solid rgb(216, 214, 214);
+    padding: 10px;
+}
+
+table.table td:first-child {
+    padding-left: 2px;
+}
+table.table td:last-child {
+    padding-right: 2px;
+}

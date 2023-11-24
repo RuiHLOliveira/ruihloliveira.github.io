@@ -18,5 +18,10 @@
         "name": "PhpDailyManager",
         "type": 2,
         "url": "/phpdailymanager"
+    },
+    {
+        "name": "HaibtJs",
+        "type": 2,
+        "url": "/habitjs"
     }
 ]

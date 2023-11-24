@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./js/cadastroEvents.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <div id="menu"></div>
+
+    <div class="card flex justify-spacebetween">
+        <div>
+            <span>Subir Backup</span>
+            <input type="file" name="arquivojson" id="arquivojson"><br>
+            <button type="button" onclick="importBackupJson()">Ok</button>
+        </div>
+        <div>
+            <span>Baixar Backup</span>
+            <button type="button" onclick="baixarBackupJson()">Baixar</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Criar habitos</h3>
+        <input type="text" name="novoHabitoNome" id="novoHabitoNome">
+        <button type="button" onclick="toggleTodosOsDias()">Todos os dias</button>
+        <br><br>
+        
+        <span class="spanBox">
+            <input type="checkbox" name="domingo" id="domingo"><label for="domingo">domingo</label>
+        </span>
+        <span class="spanBox">
+            <input type="checkbox" name="segunda" id="segunda"><label for="segunda">segunda</label>
+        </span>
+        <span class="spanBox">
+            <input type="checkbox" name="terca" id="terca"><label for="terca">terca</label>
+        </span>
+        <span class="spanBox">
+            <input type="checkbox" name="quarta" id="quarta"><label for="quarta">quarta</label>
+        </span>
+        <span class="spanBox">
+            <input type="checkbox" name="quinta" id="quinta"><label for="quinta">quinta</label>
+        </span>
+        <span class="spanBox">
+            <input type="checkbox" name="sexta" id="sexta"><label for="sexta">sexta</label>
+        </span>
+        <span class="spanBox">
+            <input type="checkbox" name="sabado" id="sabado"><label for="sabado">sabado</label>
+        </span>
+
+        <br><br>
+        <button type="button" onclick="criarNovoHabito()">Criar</button>
+    </div>
+
+    <div class="card">
+        <h3>Lista Ordinaria Habitos</h3>
+        <div id="listaOrdinariaHabitos"></div>
+    </div>
+</body>
+</html>

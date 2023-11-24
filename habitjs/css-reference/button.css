@@ -1,0 +1,64 @@
+
+
+a.btn,
+button {
+    background-color: var(--default-bg);
+    color: #ffffff;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 5px;
+    border-radius: 3px;
+
+    /* link */
+    text-decoration: none;
+
+    /* button */
+    border: 0px;
+    font-size: inherit;
+    font-family: inherit;
+    cursor:pointer;
+    min-width: calc(9*4px);
+}
+
+a.btn:hover,
+button:hover {
+    background-color: var(--default-bg-hover);
+}
+
+
+a.btn-red,
+button.btn-red {
+    background-color: var(--red-bg)
+}
+
+.btn_secondary {
+    color: var(--default-bg);
+    border: 1px solid var(--default-bg);
+    background-color: var(--secondary-bg);
+}
+.btn_secondary:hover {
+    background-color: var(--secondary-bg-hover);
+}
+
+.btn_atividade_concluida {
+    background-color: var(--situacao1-bg)
+}
+
+.btn_atividade_concluida:hover {
+    background-color: var(--situacao1-bg-hover)
+}
+
+.btn_atividade_falhou {
+    background-color: var(--situacao2-bg)
+}
+
+.btn_atividade_falhou:hover {
+    background-color: var(--situacao2-bg-hover)
+}
+
+
+a.btn.btn-sm,
+button.btn-sm {
+    font-size: 0.8rem;
+    padding: 2px 5px;
+}

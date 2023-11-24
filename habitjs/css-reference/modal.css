@@ -1,0 +1,37 @@
+.modalBackground {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #3d3d3ddd;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    position: relative;
+    background-color: #ffffff;
+    /* margin: 0 auto; */
+    /* margin-top: 20px; */
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+}
+
+/* RESPONSIVIDADE DESKTOP */
+@media only screen and (min-width: 600px) {
+    .modalBackground {
+        /* align-items: flex-start; */
+    }
+
+    .modal {
+        margin-top: 50px;
+        height: fit-content;
+        max-height: 70vh;
+        max-width: 700px;
+        padding: 20px;
+        overflow-y: auto;
+    }
+}
