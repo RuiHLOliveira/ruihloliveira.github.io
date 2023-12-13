@@ -1,0 +1,90 @@
+@import url('../reset.css');
+@import url('../flex.css');
+
+* {
+    box-sizing: border-box;
+    /* custom colors */
+    --blue: #657baa;
+    --blue: #246997;
+    --brightblue: #b1daf555;
+
+    --background-color: #ffffff;
+    --background-color2: #dbecdb;
+    --produtoBgColor: #ffffff00;
+}
+
+.font-kalnia{
+    font-family: 'Kalnia', serif;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--background-color);
+}
+
+.convite {
+    text-align: center;
+    background-color: var(--background-color2);
+    padding: 40px 0px;
+}
+
+.convite > *{
+    margin: 10px auto;
+    padding: 5px;
+    width: 90%;
+    max-width: 700px;
+}
+
+.boxListaCasamento {
+    text-align: center;
+    padding: 40px 0px;
+    margin: inherit 20px;
+}
+
+a {
+    color: #448044;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #448044;
+}
+
+.botaoPresentear{
+    color: #e7e7e7;
+    font-weight: normal;
+    text-decoration: none;
+    background-color: #448044;
+    margin: 20px auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+a.botaoPresentear:visited {
+    color: #e7e7e7;
+}
+a.botaoPresentear:hover {
+    background-color: #2e572e;
+}
+
+.boxProduto{
+    /* border: 1px solid #eeeeee; */
+    /* border: 1px solid #777777; */
+    /* border: 2px solid #2e572e; */
+    border: 1px solid #448044;
+    background-color: var(--produtoBgColor);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 0px 15px 20px 15px;
+    text-align: center;
+    /* width: 150px; */
+    /* width: 200px; */
+    width: 300px;
+}
+
+.imgProduto {
+    width: auto;
+    max-width: 100%;
+    max-height: 2000px;
+    /* max-width: 200px; */
+    margin: 20px auto;
+}

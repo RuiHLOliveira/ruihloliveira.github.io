@@ -1,0 +1,196 @@
+[
+    {
+        "valid": true,
+        "nome": "Kit de Lençol e fronha",
+        "imgsrc": "https://m.media-amazon.com/images/I/81SJE6EHpZL._AC_SL1500_.jpg",
+        "artigoMensagem": "um",
+        "valorMedio": "R$100",
+        "exemplos": [
+            "https://www.amazon.com.br/dp/B0C28R3WTY"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Edredom / cobertor",
+        "imgsrc": "https://m.media-amazon.com/images/I/71BFuYzSLUS._AC_SL1500_.jpg",
+        "artigoMensagem": "um",
+        "valorMedio": "de R$110 até R$140",
+        "exemplos": [
+            "https://www.amazon.com.br/Conjunto-Edredon-Aconchego-Pe%C3%A7as-Padr%C3%A3o/dp/B091FQDSGM/ref=asc_df_B091FQDSGM",
+            "https://www.mercadolivre.com.br/coberdrom-casal-queen-sherpa-edredom-pele-de-carneiro-jf-cor-cinza/p/MLB24341890"
+
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Conjunto de Travesseiros",
+        "imgsrc": "https://m.media-amazon.com/images/I/71eaH680PML._AC_SL1500_.jpg",
+        "artigoMensagem": "um",
+        "valorMedio": "de R$50 até R$90",
+        "exemplos": [
+            "https://www.amazon.com.br/Travesseiro-Integralmente-Lav%C3%A1vel-Fibrasca-Revestimento/dp/B07B9Z1ZQL",
+            "https://produto.mercadolivre.com.br/MLB-3151976702-kit-2-travesseiros-90x50-king-toque-de-pluma-firme-180-fios-_JM"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Cobre-leito / Protetor de colchão",
+        "imgsrc": "https://http2.mlstatic.com/D_NQ_NP_628054-MLU72566062626_112023-O.webp",
+        "artigoMensagem": "um",
+        "valorMedio": "de R$80 R$100",
+        "exemplos": [
+            "https://www.mercadolivre.com.br/cobre-leito-colcha-queen-dupla-face-matelado-tropical-03-pcs-cor-azul-azulado-marinho-escuro-claro-royal/p/MLB24210996",
+            "https://produto.mercadolivre.com.br/MLB-3317369844-colcha-cobre-leito-matelado-liso-queen-3-pecas-_JM",
+            "https://shopee.com.br/product/1073407042/21499034217"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Sapateira",
+        "imgsrc": "https://http2.mlstatic.com/D_NQ_NP_2X_824198-MLU72637511903_112023-F.webp",
+        "artigoMensagem": "uma",
+        "valorMedio": "de R$50 R$130",
+        "exemplos": [
+            "https://www.mercadolivre.com.br/sapateira-organizador-prateleira-ate-12-pares-desmontavel/p/MLB22277662",
+            "https://www.mercadolivre.com.br/sapateira-vertical-organizadora-multiuso-5-andares/p/MLB23499847",
+            "https://www.mercadolivre.com.br/sapateira-e-banco-porta-entrada-2-prateleiras-safira-cores-cor-pretofreijo/p/MLB25854644"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Kit prateleira organizador de armário",
+        "imgsrc": "https://m.media-amazon.com/images/I/81EA9sbxvyL._AC_SX522_.jpg",
+        "artigoMensagem": "um",
+        "valorMedio": "R$90",
+        "exemplos": [
+            "https://www.amazon.com.br/dp/B08JQKG41X"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Panela de pressão elétrica Mondial 5L",
+        "imgsrc": "https://m.media-amazon.com/images/I/81iejDNyklL._AC_SL1500_.jpg",
+        "artigoMensagem": "uma",
+        "valorMedio": "R$400",
+        "exemplos": [
+            "https://www.amazon.com.br/dp/B07L8PWVW5"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Kit de bowl / tigela de inox",
+        "imgsrc": "https://m.media-amazon.com/images/I/61oqch20+DL._AC_SL1181_.jpg",
+        "artigoMensagem": "um",
+        "valorMedio": "R$90",
+        "exemplos": [
+            "https://www.amazon.com.br/Conjunto-Tigelas-Preparar-Alimentos-Suprema/dp/B01N7NE77P"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Assadeira / Formas de bolo",
+        "imgsrc": "https://m.media-amazon.com/images/I/611auSM-aCL._AC_SL1200_.jpg",
+        "artigoMensagem": "uma",
+        "valorMedio": "R$35",
+        "exemplos": [
+            "https://www.amazon.com.br/Formas-Pe%C3%A7as-Remov%C3%ADvel-Antiaderente-Carbono/dp/B07TDN89L6"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Cafeteira elétrica",
+        "imgsrc": "https://http2.mlstatic.com/D_NQ_NP_2X_748855-MLU72748261091_112023-F.webp",
+        "artigoMensagem": "uma",
+        "valorMedio": "R$120",
+        "exemplos": [
+            "https://www.mercadolivre.com.br/cafeteira-eletrica-inox-19-xicaras-ocaf300-preto-oster-110v/p/MLB17949789",
+            "https://www.mercadolivre.com.br/cafeteira-eletrica-efficient-ecm10-15-xicaras-electrolux-cor-inox-110v/p/MLB18927373"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Processador de alimentos",
+        "imgsrc": "https://m.media-amazon.com/images/I/51dW-RRTMKL._AC_SL1000_.jpg",
+        "artigoMensagem": "um",
+        "valorMedio": "de R$140 a R$160",
+        "exemplos": [
+            "https://www.amazon.com.br/dp/B07RX9WZS7",
+            "https://www.amazon.com.br/Mini-Processador-Turbo-Pratic-Mondial/dp/B08PPRYWZG"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Sanduicheira elétrica",
+        "imgsrc": "https://m.media-amazon.com/images/I/51J3uSsK1tL._AC_SL1000_.jpg",
+        "artigoMensagem": "uma",
+        "valorMedio": "até R$100",
+        "exemplos": [
+            "https://www.amazon.com.br/Grill-Sanduicheira-BRITANIA-PORTATEIS-IMPORTADOS/dp/B0765JVD5Q"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Pipoqueira",
+        "imgsrc": "https://m.media-amazon.com/images/I/61lJjtLR5uL._AC_SL1000_.jpg",
+        "artigoMensagem": "uma",
+        "valorMedio": "até R$200",
+        "exemplos": [
+            "https://www.amazon.com.br/Pipoqueira-Brit%C3%A2nia-Pop-Time-IMPORTADOS/dp/B076BB2NCN",
+            "https://www.amazon.com.br/Pipoqueira-Popflix-Mondial-Pp-03-Vermelho/dp/B07G1HWM9D",
+            "https://www.mercadolivre.com.br/pipoqueira-eletrica-popflix-pp-04-ar-quente-branca-mondial-cor-branco-110v/p/MLB14605138"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Ferro de passar",
+        "imgsrc": "https://m.media-amazon.com/images/I/510ICGCxVaL._AC_SL1000_.jpg",
+        "artigoMensagem": "um",
+        "valorMedio": "até R$60",
+        "exemplos": [
+            "https://www.amazon.com.br/Ferro-Vapor-Jupiter-Mallory-Branco/dp/B076HDT51V"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Toalha de banho",
+        "imgsrc": "https://http2.mlstatic.com/D_NQ_NP_2X_971266-MLB70553326802_072023-F.webp",
+        "artigoMensagem": "uma",
+        "valorMedio": "até R$80",
+        "exemplos": [
+            "https://produto.mercadolivre.com.br/MLB-3343871971-toalha-de-banho-gigante-100-algodo-yumi-buddemeyer-_JM",
+            "https://produto.mercadolivre.com.br/MLB-3349568333-toalha-banho-banho-gigante-yumi-buddemeyer-100-algodo-_JM"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Tapete de banheiro",
+        "imgsrc": "https://http2.mlstatic.com/D_NQ_NP_2X_736309-MLB54290946070_032023-F.webp",
+        "artigoMensagem": "um",
+        "valorMedio": "até R$40",
+        "exemplos": [
+            "https://www.amazon.com.br/Tapetes-banheiro-absorventes-secagem-antiderrapante/dp/B09GY7BGBQ",
+            "https://produto.mercadolivre.com.br/MLB-3280070654-tapete-magico-ultra-absorvente-antiderrapante-casa-banheiro-_JM"
+        ]
+    },
+    {
+        "valid": true,
+        "nome": "Medidor de pressão",
+        "imgsrc": "https://m.media-amazon.com/images/I/41HtfCzZGHL._AC_SL1000_.jpg",
+        "artigoMensagem": "um",
+        "valorMedio": "até R$90",
+        "exemplos": [
+            "https://www.amazon.com.br/Aparelho-Medidor-Press%C3%A3o-Digital-Premium/dp/B07CW2Z64Z"
+        ]
+    },
+    {
+        "valid": false,
+        "nome": "Varal de roupa vertical de 3 andares)",
+        "imgsrc": "https://http2.mlstatic.com/D_NQ_NP_2X_884310-MLU73129963510_122023-F.webp",
+        "artigoMensagem": "um",
+        "valorMedio": "até R$120",
+        "exemplos": [
+            "https://www.mercadolivre.com.br/varal-vertical-de-cho-de-3-andares-dobravel-portatil/p/MLB26749511",
+            "https://www.amazon.com.br/Varal-Andares-Retratil-Compacto-Rodinhas/dp/B0BKTJWPF7"
+        ]
+    }
+]
