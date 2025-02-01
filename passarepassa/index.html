@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem dos Cliques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 10px;
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 4rem 4rem;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            touch-action: manipulation; /* Melhora resposta touch */
+        }
+
+        #button1 {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #button2 {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        #result {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            min-height: 3em;
+            line-height: 1.5;
+        }
+
+        .reset-button {
+            margin-top: 10px;
+            padding: 0.5rem 1rem;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+            <button id="button1">Botão 1</button>
+        </div>
+        
+        <div>
+            <h1>Ordem dos Cliques 1.2</h1>
+            <p>Clique nos botões o mais rápido que puder!</p>
+            <button id="resetButton" class="reset-button">Reiniciar</button>
+            <div id="result"></div>
+        </div>
+        
+
+        <div>
+            <button id="button2">Botão 2</button>
+            <br><br>
+        </div>
+    </div>
+
+    <script>
+        const resultDiv = document.getElementById('result');
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+        const resetButton = document.getElementById('resetButton');
+
+        let clicks = {
+            button1: null,
+            button2: null
+        };
+
+        function handleClick(buttonNumber) {
+            const now = performance.now(); // Usa performance.now() para maior precisão
+            
+            if (buttonNumber === 1) {
+                clicks.button1 = now;
+            } else {
+                clicks.button2 = now;
+            }
+
+            // Só mostra resultado quando ambos os botões foram clicados
+            if (clicks.button1 !== null && clicks.button2 !== null) {
+                const timeDiff = Math.abs(clicks.button1 - clicks.button2);
+                let message = '';
+
+                if (clicks.button1 < clicks.button2) {
+                    message = `Botão 1 foi primeiro!\n`;
+                } else if (clicks.button2 < clicks.button1) {
+                    message = `Botão 2 foi primeiro!\n`;
+                } else {
+                    message = `Cliques simultâneos!\n`;
+                }
+
+                message += `Diferença de tempo: ${timeDiff.toFixed(2)} milissegundos`;
+                resultDiv.innerHTML = message.replace('\n', '<br>');
+            }
+        }
+
+        function resetClicks() {
+            clicks = {
+                button1: null,
+                button2: null
+            };
+            resultDiv.textContent = '';
+        }
+
+        // Usando tanto click quanto touch events
+        const addEvents = (element, buttonNumber) => {
+            element.addEventListener('click', () => handleClick(buttonNumber));
+            element.addEventListener('touchstart', (e) => {
+                e.preventDefault(); // Previne duplo disparo em alguns dispositivos
+                handleClick(buttonNumber);
+            });
+        };
+
+        addEvents(button1, 1);
+        addEvents(button2, 2);
+        resetButton.addEventListener('click', resetClicks);
+    </script>
+</body>
+</html>

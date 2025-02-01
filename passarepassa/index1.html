@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem dos Cliques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #button1 {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #button2 {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        #result {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            min-height: 2em;
+        }
+
+        .reset-button {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ordem dos Cliques</h1>
+        <p>Clique nos botões para ver qual foi pressionado primeiro</p>
+        
+        <div class="buttons">
+            <button id="button1">Botão 1</button>
+            <button id="button2">Botão 2</button>
+        </div>
+        
+        <div id="result"></div>
+        <button id="resetButton" class="reset-button">Reiniciar</button>
+    </div>
+
+    <script>
+        let firstClick = null;
+        const resultDiv = document.getElementById('result');
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+        const resetButton = document.getElementById('resetButton');
+
+        function handleClick(buttonNumber) {
+            if (!firstClick) {
+                firstClick = buttonNumber;
+                resultDiv.textContent = `O Botão ${buttonNumber} foi clicado primeiro!`;
+            }
+        }
+
+        function resetClicks() {
+            firstClick = null;
+            resultDiv.textContent = '';
+        }
+
+        button1.addEventListener('click', () => handleClick(1));
+        button2.addEventListener('click', () => handleClick(2));
+        resetButton.addEventListener('click', resetClicks);
+    </script>
+</body>
+</html>
